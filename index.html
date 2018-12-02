@@ -14,19 +14,8 @@
             <!-- <a-asset-item id="mat" material="color: #c62323; metalness:1; roughness: 0"></a-asset-item> -->
         </a-assets>
         <!-- primitive ruby cube -->
-        <!-- <a-entity position="0 1.5 -4" geometry="primitive: box" 
-            cube-env-map="path: assets/skybox/;
-            extension: jpg;
-            reflectivity: 1;">
-            <a-animation attribute="rotation"
-                dur="4000"
-                fill="forwards"
-                to="0 360 0"
-                repeat="indefinite"
-                easing="linear"></a-animation>
-        </a-entity> -->
-        <!-- gltf ruby cube -->
-        <a-entity position="0 1.5 -4" gltf-model="#cube"
+        <a-entity position="0 1.5 -4" geometry="primitive: box" 
+            material="color: #c62323; metalness:1; roughness: 0"
             cube-env-map="path: assets/skybox/;
             extension: jpg;
             reflectivity: 1;">
@@ -37,6 +26,18 @@
                 repeat="indefinite"
                 easing="linear"></a-animation>
         </a-entity>
+        <!-- gltf ruby cube -->
+        <!-- <a-entity position="0 1.5 -4" gltf-model="#cube"
+            cube-env-map="path: assets/skybox/;
+            extension: jpg;
+            reflectivity: 1;">
+            <a-animation attribute="rotation"
+                dur="4000"
+                fill="forwards"
+                to="0 360 0"
+                repeat="indefinite"
+                easing="linear"></a-animation>
+        </a-entity> -->
     </a-scene>
 </body>
 </html>
